@@ -8,7 +8,6 @@ export const Actions = {
   FETCH_COMPLETED: "FETCH_COMPLETED",
 };
 const reducer = (state, action) => {
-  console.log(action);
   switch (action.type) {
     case Actions.ADD_TODO:
       return [action.todo, ...state];
